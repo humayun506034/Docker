@@ -20,7 +20,6 @@ app.use(globalErrorHandler);
 app.get("/", (req: Request, res: Response) => {
   res.send("UUING Curier Service Server is running");
 });
-
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.status(status.NOT_FOUND).json({
     success: false,
